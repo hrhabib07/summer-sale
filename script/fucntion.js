@@ -1,4 +1,4 @@
-
+// product-4 
 document.getElementById('product-4').addEventListener('click', function(){
     let productPrice4 = document.getElementById('product-4-price').innerText;
     productPrice4 = parseFloat(productPrice4);
