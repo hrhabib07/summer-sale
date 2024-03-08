@@ -26,13 +26,13 @@
         </section>
         <section class="container mx-auto">
             <!-- flex container  -->
-            <div class="flex justify-center items-center my-8">
+            <div class="flex justify-center my-8">
                 <div class="flex-1">
                     <h2 class="text-md font-bold">Kitchenware</h2>
                     <!-- card container  -->
-                    <div class="grid grid-cols-3 gap-4 my-4">
+                    <div  class="grid grid-cols-3 gap-4 my-4">
                         <!-- single card  -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div id="product-1" class="card bg-base-100 shadow-xl">
                             <figure><img src="images/prod1.png" alt="Shoes" /></figure>
                             <div class="card-body text-center">
                                 <div class="flex justify-center"><div class="rating">
@@ -42,13 +42,13 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   </div></div>
-                              <p class="font-medium">K Accessories</p>
-                              <p class="text-gray-400">39.00 TK</p>
+                              <p id="product-1-title" class="font-medium">K Accessories</p>
+                              <p  class="text-gray-400"><span id="product-1-price">39.00</span> TK</p>
                               
                             </div>
                           </div>
                         <!-- single card  -->
-                        <div class="card bg-base-100 shadow-xl">
+                        <div id="product-2" class="card bg-base-100 shadow-xl">
                             <figure><img src="images/prod2.png" alt="Shoes" /></figure>
                             <div class="card-body text-center">
                                 <div class="flex justify-center"><div class="rating">
@@ -58,8 +58,8 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   </div></div>
-                              <p class="font-medium">K Accessories</p>
-                              <p class="text-gray-400"><span>25.00</span> TK</p>
+                              <p id="product-2-title" class="font-medium">K Accessories</p>
+                              <p id="product-2-price" class="text-gray-400"><span>25.00</span> TK</p>
                               
                             </div>
                           </div>
@@ -133,9 +133,45 @@
                           </div>
                     </div>
                 </div>
-                <div class="w-96"></div>
+                <div class="w-96">
+                    <!-- coupon card container  -->
+                    <div class="card bg-base-100 shadow-xl mx-4">
+                        <div class="card-body">
+                          <h2 class="text-lg font-medium">Have coupon?</h2>
+                          <div class="flex">
+                            <input type="text" placeholder="Coupon code" class="input input-bordered w-full max-w-xs border-e-0 rounded-e-none" />
+                            <button class="bg-pink-500 text-white px-4 py-2 rounded border-s-0 rounded-s-none">Apply</button>
+                        </div>
+                        </div>
+                      </div>
+                    <!-- coupon card container  -->
+                    <div class="card bg-base-100 shadow-xl m-4 text-xl">
+                        <div class="card-body">
+                          
+                            
+                      <!-- chart container  -->
+                      <div id="chart-container" class="m-2 border-b-2 mb-2">
+                        <ol style="list-style: decimal;" id="ol-container" class=" font-medium m-2"> 
+                           
+                        </ol>
+                        <br>
+                        <hr>
+                      </div>
+                      <!-- price container  -->
+                      <div id="price-container" class="m-2 border-b-2">
+                        <p><span class="font-medium">Total Price :</span> <span class="text-gray-400"><span id="total-price">0.00</span> TK</span></p>
+                        <p><span class="font-medium">Discount :</span> <span class="text-gray-400"><span id="discount-price">0.00</span> TK</span></p>
+                        <p><span class="font-medium">Total Price :</span> <span class="text-gray-400"><span id="total-price-after-discount">0.00</span> TK</span></p>
+                        <br>
+                      </div>
+                          
+                        </div>
+                      </div>
+
+                </div>
             </div>
         </section>
     </main>
+    <script src="script/prod1.js"></script>
 </body>
 </html>
