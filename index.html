@@ -166,8 +166,26 @@
                       </div>
                           
                       <div class="flex justify-center">
-                        <button class="bg-pink-500 text-white px-4 py-2 rounded">Apply</button>
+                        <button class="bg-pink-500 text-white px-4 py-2 rounded" onclick="my_modal_5.showModal()">Apply</button>
                       </div>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div class="flex justify-center items-center text-center">
+      <div>
+        <h3 class="font-bold text-lg">Congratulation </h3>
+      <p class="py-4">You have successfully paced your order</p>
+      <img class="mx-auto" src="images/congo.png" alt="">
+      <p class="py-4">Press ESC key or click the button below to close</p>
+      </div>
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button id="order-placed-btn" class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                         </div>
                       </div>
 
@@ -177,5 +195,6 @@
     </main>
     <script src="script/prod1.js"></script>
     <script src="script/coupon-button.js"></script>
+    <script src="script/order-placed-btn.js"></script>
 </body>
 </html>
