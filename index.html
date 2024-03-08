@@ -139,8 +139,8 @@
                         <div class="card-body">
                           <h2 class="text-lg font-medium">Have coupon?</h2>
                           <div class="flex">
-                            <input type="text" placeholder="Coupon code" class="input input-bordered w-full max-w-xs border-e-0 rounded-e-none" />
-                            <button class="bg-pink-500 text-white px-4 py-2 rounded border-s-0 rounded-s-none">Apply</button>
+                            <input id="coupon-code" placeholder="Coupon code" class="input input-bordered w-full max-w-xs border-e-0 rounded-e-none" type="text" />
+                            <button id="coupon-button" class="bg-pink-500 text-white px-4 py-2 rounded border-s-0 rounded-s-none" >Apply</button>
                         </div>
                         </div>
                       </div>
@@ -160,11 +160,14 @@
                       <!-- price container  -->
                       <div id="price-container" class="m-2 border-b-2">
                         <p><span class="font-medium">Total Price :</span> <span class="text-gray-400"><span id="total-price">0.00</span> TK</span></p>
-                        <p><span class="font-medium">Discount :</span> <span class="text-gray-400"><span id="discount-price">0.00</span> TK</span></p>
+                        <p><span class="font-medium">Discount :</span> <span class="text-gray-400"><span id="discount-amount">0.00</span> TK</span></p>
                         <p><span class="font-medium">Total Price :</span> <span class="text-gray-400"><span id="total-price-after-discount">0.00</span> TK</span></p>
                         <br>
                       </div>
                           
+                      <div class="flex justify-center">
+                        <button class="bg-pink-500 text-white px-4 py-2 rounded">Apply</button>
+                      </div>
                         </div>
                       </div>
 
@@ -173,5 +176,6 @@
         </section>
     </main>
     <script src="script/prod1.js"></script>
+    <script src="script/coupon-button.js"></script>
 </body>
 </html>
